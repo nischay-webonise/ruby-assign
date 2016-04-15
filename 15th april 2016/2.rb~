@@ -11,7 +11,7 @@ class Gadgets
         puts "computers are very durable";
     end
 end
-newobject=Gadgets.new;
+newobjects=Gadgets.new;
 newobjects.phones;
 newobjects.laptops;
 newobjects.computers;       
