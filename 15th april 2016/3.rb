@@ -1,6 +1,6 @@
 #!/usr/bin/ruby -w
 
-arr=["hello", "its", "an", "array", "date", 2016]
+arr = ["hello", "its", "an", "array", "date", 2016]
 
 arr.each do |i|
    puts i

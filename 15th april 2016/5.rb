@@ -1,7 +1,7 @@
 #!/usr/bin/ruby -w
 
-$x=10
-$y=20
+$x = 10
+$y = 20
 if $x == $y
   print "x and y are equal\n"
 else
