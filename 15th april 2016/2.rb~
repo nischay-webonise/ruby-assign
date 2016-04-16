@@ -14,5 +14,6 @@ end
 newobjects=Gadgets.new;
 newobjects.phones;
 newobjects.laptops;
-newobjects.computers;       
+newobjects.computers; 
+puts "end";      
  
