@@ -10,4 +10,5 @@ puts "printing array in single line"
 
 arr.each do |j|
    print j," "
+
 end
