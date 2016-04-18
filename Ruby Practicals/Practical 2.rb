@@ -1,8 +1,7 @@
 #!/usr/bin/ruby -w
 
-#Practical 2
+# Practical 2
 
-print "Enter the radius: "
+print 'Enter the radius: '
 a = gets.chomp.to_f
-area = a*a*22/7
-puts "Area is: #{area}"
+puts "Area is: #{a * a * 22 / 7}"

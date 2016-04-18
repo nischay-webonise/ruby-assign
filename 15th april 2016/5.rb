@@ -1,23 +1,23 @@
 #!/usr/bin/ruby -w
 
-$x = 10
-$y = 20
-if $x == $y
+x = 10
+y = 20
+if x == y
   print "x and y are equal\n"
 else
   print "x and y are not equal\n"
 end
 
-unless $x > 200
+if x < 200
   print "x is lesser\n"
 else
   print "x is greater\n"
 end
 
-print "x is valid\n" if $x
-print "y is valid\n" unless $y
+print 'x is valid\n' if x
+print 'y is valid\n' unless y
 
-#switch cases in ruby and check case for a particular no.
+# switch cases in ruby and check case for a particular no.
 
 expr0 = 10
 
@@ -35,9 +35,9 @@ expr1 = 10
 
 case expr1
 when 1..100
-  puts "valid1"
+  puts 'valid1'
 when 5..100
-  puts "valid2"
+  puts 'valid2'
 else
   puts "valid3"
 end

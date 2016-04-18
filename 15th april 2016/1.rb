@@ -1,3 +1,3 @@
 #!/usr/bin/ruby -w
 
-p "hello world";
+p 'hello world'
