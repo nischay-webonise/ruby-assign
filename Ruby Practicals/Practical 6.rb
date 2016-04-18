@@ -1,34 +1,34 @@
 #!/usr/bin/ruby -w
 
-# loops
+# Blocks
 
-(0..5).each do |i|
-  print "i=#{i} "
-end
-puts ''
-i = 0
-# Kernel#loop
-j = 10
-loop do
-  begin
-    print "i=#{i} "
-    j /= i
-    i += 1
-    break unless i < 0
-  rescue
-    puts 'divide by zero'
-    break
-  end
-end
-puts ''
+[1, 2, 3, 4] . each { |i| print "#{i}" }
 
-# while loop
-i = 5
+# Block using function call
 
-# while modifier
-loop do
-  print "i=#{i} "
-  i -= 1
-  break if i < 0
+def foo
+  yield 23
 end
-puts ''
+
+foo { |num| puts "#{num}!" }
+
+# Proc
+
+def foo2(var)
+  var.call
+end
+
+var = proc { |i| puts "hello #{i}" }
+
+[1, 2, 3].each(&var)
+
+# lambda
+
+def foo3(var2)
+  var2.call
+end
+
+var = lambda { |i| puts "nischay #{i}" }
+
+[1, 2, 3].each(&var)
+

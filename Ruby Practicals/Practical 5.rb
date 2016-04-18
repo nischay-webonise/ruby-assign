@@ -6,29 +6,29 @@
   print "i=#{i} "
 end
 puts ''
-
+i = 0
 # Kernel#loop
-
+j = 10
 loop do
-  print "i=#{i} "
-  i += 1
-  break unless i < 0
+  begin
+    print "i=#{i} "
+    j /= i
+    i += 1
+    break unless i < 0
+  rescue
+    puts 'divide by zero'
+    break
+  end
 end
 puts ''
 
 # while loop
-
-loop do
-  print "i=#{i} "
-  i += 1
-  break until i > 5
-end
-puts ''
+i = 5
 
 # while modifier
 loop do
   print "i=#{i} "
   i -= 1
-  break until i < 0
+  break if i < 0
 end
 puts ''
