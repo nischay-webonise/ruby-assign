@@ -1,22 +1,21 @@
 #!/usr/bin/ruby -w
 
-=begin
-we can declare array using array class or using directly arr[,,]
-=end
 
-puts "method 1"
+#  we can declare array using array class or using directly arr[,,]
 
-arr1 = Array.new(10) { |e| e = e * 2 }
+puts 'method 1'
+# e*2 used intentially
+arr1 = Array.new(10) { |e| e *= 2 }
   puts "#{arr1}"
 
-puts "method 2"
-arr2 = Array.new(10, "p ")
+puts 'method 2'
+arr2 = Array.new(10, 'p ')
 
 arr2.each do |i|
-  print i*3
+  print i * 3
 end
 
-puts "\nmethod 3"
+puts '\nmethod 3'
 
 arr3 = Array.[](1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
