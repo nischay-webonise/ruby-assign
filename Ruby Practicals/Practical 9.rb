@@ -9,7 +9,7 @@ class Players
     end
   end
 end
-
 player = Players.new
 puts player.nischay('plays tt')
 puts player.nikhil('plays badminton')
+
